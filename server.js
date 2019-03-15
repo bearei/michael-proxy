@@ -7,7 +7,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 app.use(morgan('dev'));
-app.use('/:itemId', express.static(path.join(__dirname, 'public')));
+app.use('/pavs/:itemId', express.static(path.join(__dirname, 'public')));
 
 app.use(
   '/api/sizechart',
