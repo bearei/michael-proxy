@@ -32,20 +32,20 @@ app.use(
   })
 )
 
-// app.use(
-//   '/reviews/:itemId',
-//   proxy({
-//     target: 'http://18.188.163.54:3003',
-//     changeOrigin: true
-//   })
-// )
-// app.use(
-//   '/reviews',
-//   proxy({
-//     target: 'http://18.188.163.54:3003',
-//     changeOrigin: true
-//   })
-// )
+app.use(
+  '/reviews/:itemId',
+  proxy({
+    target: 'http://18.188.163.54:3003',
+    changeOrigin: true
+  })
+)
+app.use(
+  '/reviews',
+  proxy({
+    target: 'http://18.188.163.54:3003',
+    changeOrigin: true
+  })
+)
 
 
 app.use(
