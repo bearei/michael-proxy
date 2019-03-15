@@ -51,21 +51,21 @@ app.use(
 app.use(
   '/products/:itemId',
   proxy({
-    target: 'http://3.95.173.198:3001',
+    target: 'http://18.212.13.97:3001',
     changeOrigin: true
   })
 )
 app.use(
   '/variants/:itemId',
   proxy({
-    target: 'http://3.95.173.198:3001',
+    target: 'http://18.212.13.97:3001',
     changeOrigin: true
   })
 )
 app.use(
   '/products/',
   proxy({
-    target: 'http://3.95.173.198:3001',
+    target: 'http://18.212.13.97:3001',
     changeOrigin: true
   })
 )
